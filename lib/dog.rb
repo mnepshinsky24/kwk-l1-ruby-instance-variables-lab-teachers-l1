@@ -1,6 +1,7 @@
 # dog.rb
 class Dog 
-  
+attr_accessor 
+
   def name=(dog_name)
   @this_dogs_name = dog_name 
   end 
@@ -27,12 +28,13 @@ class Dog
 end 
 
 
-lassie = Dog.new
+lassie = Dog.new("Lassie","corgi")
 lassie.name = "Bonita" 
 lassie.breed = "border collie"
 lassie.size = "large"
 
 puts lassie
+
 puts " This is my dog #{lassie.name}. She is a #{lassie.size} #{lassie.breed}." 
 
 
